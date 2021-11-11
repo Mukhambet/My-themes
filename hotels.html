@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOTELS</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <ul id="nav-ul" class="nav-ul">
+                <li>
+                    <a class="nav-link" href="#">Информация</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Фото и видео</a>
+                </li>
+                <li class="li-empty"></li>
+                <li>
+                    <a class="nav-link" href="#">Карта штата</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Гостиницы</a>
+                </li>
+            </ul>
+            <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo"></a>
+            <button id="burger-menu-pic" class="burger-menu-pic">
+                <img src="images/menu.svg" alt="menu">
+            </button>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <div class="search">
+        <div class="row search-row">
+            <div class="search-cols">
+                <div class="search-col">
+                    <div class="search-col-subtitle">Инфраструктура:</div>
+                    <label>
+                        <input class="search-input" type="checkbox">
+                        <span>Бассейн</span>
+                    </label>
+                    <label>
+                        <input class="search-input" type="checkbox">
+                        <span>Парковка</span>
+                    </label>
+                    <label>
+                        <input class="search-input" type="checkbox">
+                        <span>Wi-Fi</span>
+                    </label>
+                </div>
+                <div class="search-col">
+                    <div class="search-col-subtitle">Тип жилья:</div>
+                    <label>
+                        <input class="search-input" type="checkbox">
+                        <span>Гостиница</span>
+                    </label>
+                    <label>
+                        <input class="search-input" type="checkbox">
+                        <span>Мотель</span>
+                    </label>
+                    <label>
+                        <input class="search-input" type="checkbox">
+                        <span>Апартаменты</span>
+                    </label>
+                </div>
+            </div>
+            <div class="price-col">
+                <div class="price-title">
+                    Стоимость в сутки (Р):
+                </div>
+                <div class="price-inputs">
+                    <label>
+                        <input class="price-input" readonly type="text" value="от 0">
+                    </label>
+                    <label>
+                        <input class="price-input" readonly type="text" value="До 3000">
+                    </label>
+                </div>
+                <div id="slider">
+
+                </div>
+                <div class="price-col-button-block">
+                    <button class="price-col-button" type="button">
+                        Показать
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="found">
+        <h2 class="found-title">
+            Найдено: 3
+        </h2>
+        <div class="found-sort">
+            <div class="found-sort-box">
+                <h3 class="found-sort-subtitle">
+                    Сортировка:
+                </h3>
+                <nav>
+                    <ul>
+                        <li><a class="nav-link" href="">По цене</a></li>
+                        <li><a class="nav-link" href="">По типу</a></li>
+                        <li><a class="nav-link" href="">По рейтингу</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="found-icons">
+                <button></button>
+                <button></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="hotels">
+        <div class="hotel">
+            <img class="hotel-pic" src="images/amara-img.png" alt="amara">
+            <div class="hotel-box">
+                <div class="hotel-box-content">
+                    <h2 class="hotel-box-content-title">
+                        Amara Resort & Spa
+                    </h2>
+                    <div class="hotel-box-content-p">
+                        <p>
+                            Гостиница
+                        </p>
+                        <p>
+                            От 4000 Р.
+                        </p>
+                    </div>
+                    <div class="hotel-box-content-buttons">
+                        <button>Подробнее</button>
+                        <button>Забронировать</button>
+                    </div>
+                </div>
+                <div class="hotel-box-rates">
+                    <div class="hotel-box-rates-star">
+                        <img src="images/rate-star.svg" alt="star">
+                        <img src="images/rate-star.svg" alt="star">
+                        <img src="images/rate-star.svg" alt="star">
+                        <img src="images/rate-star.svg" alt="star">
+                    </div>
+                    <div class="hotel-box-rates-rate">
+                        Рейтинг: 8,5
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hotel">
+            <img class="hotel-pic" src="images/desert-img.png" alt="desert">
+            <div class="hotel-box">
+                <div class="hotel-box-content">
+                    <h2 class="hotel-box-content-title">
+                        Desert Quail Inn
+                    </h2>
+                    <div class="hotel-box-content-p">
+                        <p>
+                            Мотель
+                        </p>
+                        <p>
+                            От 3000 Р.
+                        </p>
+                    </div>
+                    <div class="hotel-box-content-buttons">
+                        <button>Подробнее</button>
+                        <button>Забронировать</button>
+                    </div>
+                </div>
+                <div class="hotel-box-rates">
+                    <div class="hotel-box-rates-star">
+                        <img src="images/rate-star.svg" alt="star">
+                        <img src="images/rate-star.svg" alt="star">
+                        <img src="images/rate-star.svg" alt="star">
+                    </div>
+                    <div class="hotel-box-rates-rate">
+                        Рейтинг: 8,9
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hotel">
+            <img class="hotel-pic" src="images/villas-img.png" alt="villas">
+            <div class="hotel-box">
+                <div class="hotel-box-content">
+                    <h2 class="hotel-box-content-title">
+                        Villas at Poco Diablo
+                    </h2>
+                    <div class="hotel-box-content-p">
+                        <p>
+                            Апартаменты
+                        </p>
+                        <p>
+                            От 2000 Р.
+                        </p>
+                    </div>
+                    <div class="hotel-box-content-buttons">
+                        <button>Подробнее</button>
+                        <button>Забронировать</button>
+                    </div>
+                </div>
+                <div class="hotel-box-rates">
+                    <div class="hotel-box-rates-star">
+                        <img src="images/rate-star.svg" alt="star">
+                        <img src="images/rate-star.svg" alt="star">
+                    </div>
+                    <div class="hotel-box-rates-rate">
+                        Рейтинг: 9,2
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-hotels">
+
+    <div class="container">
+        <div class="media">
+            <div class="media-tel">
+                ТЕЛ: +7(495) 666-01-66
+            </div>
+            <div class="media-links">
+                <a href="https://twitter.com">
+                    <img src="images/tw.svg" alt="tw">
+                </a>
+                <a href="https://facebook.com">
+                    <img src="images/fb.svg" alt="fb">
+                </a>
+                <a href="https://youtube.com">
+                    <img src="images/youtube.svg" alt="yt">
+                </a>
+            </div>
+            <div class="media-hashtag">
+                #visitSEDONA
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script src="libs/nouislider/nouislider.min.js"></script>
+<script src="script/script.js"></script>
+<script src="script/slider.js"></script>
+
+</body>
+</html>
